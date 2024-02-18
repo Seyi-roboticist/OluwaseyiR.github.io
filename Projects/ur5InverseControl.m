@@ -1,3 +1,6 @@
+%% Developer: Seyi R. Afolayan 
+% Wrote the ur5InverseControl function for Team 7 Place and Draw final project.
+
 function done = ur5InverseControl(ur5, startFrame, overDistance1, downDistance, overDistance2, lineTime)
     % Initialize step sizes in millimeters
     stepSizes = [overDistance1, downDistance, overDistance2] * 1000;
