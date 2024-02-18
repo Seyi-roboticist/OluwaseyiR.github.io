@@ -29,6 +29,7 @@ The project includes a custom-designed motor shaft connector, allowing the motor
 - Arduino IDE
 - Access to a 3D printer
 - Basic electronic tools and supplies
+- Comfortability with Electromechanical Design 
 
 ### Installation
 
