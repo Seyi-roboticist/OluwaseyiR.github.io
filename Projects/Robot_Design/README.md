@@ -1,39 +1,35 @@
 # ARM M1 Robotic Arm Design: Kinematics and Control
 
 ## Overview
-The ARM M1 project stands as a significant personal achievement in the field of engineering, showcasing the practical applications of robotics. This project began with a unique 6-DOF robotic arm designed in SolidWorks and realized through both prototyping in PLA and final fabrication in aluminum.
 
-## Fabrication Details
-Below are some of the custom fabricated parts for the ARM M1:
+The ARM M1 project represents a significant milestone in my engineering journey, embodying my most impactful personal project to date. This venture into robotics culminates in the creation of a highly practical, 6-DOF (degree of freedom) robotic arm, inspired by an initial hydraulic design and realized through the capabilities of SolidWorks. Transitioning from a PLA prototype to a refined aluminum construct, the ARM M1 stands as a testament to innovation and personalized engineering solutions.
 
-![Part 1](/images/IMG_2168.jpeg)
-*Figure 1: Custom fabricated part of ARM M1.*
+## Project Highlights
 
-![Part 2](/images/IMG_2167.jpeg)
-*Figure 2: Another angle of the custom fabricated part.*
+- **Design and Fabrication**: The leap from a conceptual hydraulic model to a functional 6-DOF robotic arm, crafted using SolidWorks. The project saw the evolution of ARM M1 from a PLA prototype to its final aluminum incarnation, showcasing a blend of aesthetic design and practical functionality.
+  
+- **3D Printing Mastery**: Revitalization of a used Ender-3 printer, adapting and upgrading its components to facilitate the custom fabrication of ARM M1 parts. This step underscored the importance of adaptability and resourcefulness in personal engineering projects.
 
-![Part 3](/images/IMG_2166.jpeg)
-*Figure 3: Side view of the robotic arm component.*
+- **Innovative Power Management**: The development of a custom PCB for ARM M1, aimed at streamlining the power management system. This innovation significantly reduced the complexity and clutter of wiring, enhancing the system's efficiency and reliability.
 
-![Part 4](/images/IMG_2165.jpeg)
-*Figure 4: Detail of the attachment point on the robotic arm.*
+- **Kinematics and Programming**: A self-taught journey through the realms of forward and inverse kinematics, utilizing online resources and platforms like YouTube. The algorithms developed from this learning process were meticulously coded in embedded C++, laying the groundwork for ARM M1's precise movement and control.
 
-![Part 5](/images/IMG_2164.jpeg)
-*Figure 5: Base component with mounted servo.*
+- **Future Directions**: The ongoing ambition to complete the metal fabrication of ARM M1 and introduce mobility to the robot's chassis. This next phase is poised to elevate the project, pushing the boundaries of what is achievable in personal robotic design.
 
-## Modifications and Refurbishment
-I have refurbished a used Ender-3 printer to produce custom parts, ensuring high precision and fit for the robotic arm.
+## Learning Outcomes
 
-## Power Management
-A custom-made PCB was designed for efficient power management, reducing wiring complexity and improving reliability.
+- Proficiency in SolidWorks for mechanical design and fabrication.
+- Hands-on experience in 3D printing and printer modification.
+- Custom PCB design for efficient power management.
+- Application of forward and inverse kinematics in robotic control.
+- Embedded C++ programming for robotics.
 
-## Kinematics
-The algorithms for forward and inverse kinematics were developed and translated into embedded C++ code, which is a testament to the sophisticated control system of ARM M1.
+## Upcoming Features
 
-## Next Steps
-The project is progressing towards the completion of metal fabrication and the integration of mobility features.
+- Completion of aluminum fabrication for enhanced durability and performance.
+- Integration of a mobile chassis to expand the robot's operational capabilities.
 
----
+## Acknowledgements
 
-This document will be periodically updated to reflect the latest developments and achievements as the ARM M1 project advances.
+This project would not have been possible without the wealth of knowledge shared by the online engineering and robotics communities. Their tutorials, forums, and videos have been invaluable in this journey.
 
