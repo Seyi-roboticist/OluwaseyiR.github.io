@@ -53,6 +53,18 @@ Before leaving Canada, I was able to find sometime to machine some of these part
   </tr>
 </table>
 
+<table>
+  <tr>
+    <td style="text-align: center; vertical-align: top;">
+      <strong>Shoulder</strong><br>
+      <img src="https://github.com/Seyi-roboticist/OluwaseyiR.github.io/blob/main/Projects/Robot_Design/images/IMG_2165.jpeg?raw=true" width="400" alt="Shoulder">
+    </td>
+    <td style="text-align: center; vertical-align: top;">
+      <strong>Elbow</strong><br>
+      <img src="https://github.com/Seyi-roboticist/OluwaseyiR.github.io/blob/main/Projects/Robot_Design/images/IMG_2168.jpeg?raw=true" width="400" alt="Elbow">
+    </td>
+  </tr>
+</table>
 
 
  
