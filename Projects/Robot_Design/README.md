@@ -36,6 +36,13 @@ The ARM M1 project represents a significant milestone in my engineering journey,
 - Damage laptop 
 	- Lack of Access to Certain 3D Parts: These components are absent but will be reprinted for additional revisions prior to the aluminum machining of the second robotic arm (Arm 2).
 	- PCB Circuit Redesign: Necessity to reconstruct the PCB design from the beginning.
+
+## Current Fabrication 
+Before leaving Canada, I was able to find sometime to machine some of these parts which are shown here (The only missing part is the end-effector. There was some design challenges I had to take care of and so there's a slight modification in the final design machined parts. 
+![Base](https://github.com/Seyi-roboticist/OluwaseyiR.github.io/blob/main/Projects/Robot_Design/images/IMG_2164.jpeg?raw=true "Base of the Robot Arm")
+
+
+
  
 ## Acknowledgements
 
