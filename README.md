@@ -1,7 +1,5 @@
 # Oluwaseyi R. Afolayan, E.I.T
-## Design Engineer and Roboticist
-
-![Profile Banner](URL_TO_PROFILE_BANNER_IMAGE)
+## Mechatronic Design Engineer and Roboticist
 
 Welcome to my engineering portfolio. I am a passionate design engineer and roboticist, currently expanding my expertise as a Robotics M.S.E. candidate at The Johns Hopkins University. With a strong foundation in precision agriculture, energy sectors, and a diverse range of technological arenas, I am dedicated to pushing the frontiers of robotics and automation.
 
@@ -38,19 +36,30 @@ I'm on a quest to create impactful engineering solutions and foster innovation. 
   - MicroFluidics, CubeSat Power Subsystem Engineering
 
 ### Selected Projects
+- **Robotic Arm Design
+  - Designed, fabricated and Controlled a Robot Arm Design
+  - [Project Page](https://github.com/Seyi-roboticist/OluwaseyiR.github.io/tree/main/Projects/Robot_Design)
 - **UR5 Robotic Arm Control**
   - Developed algorithms for precise robotic arm movement and control.
-  - [Final Project Report](URL_TO_PROJECT_REPORT)
+  - [Final Project Report](https://drive.google.com/file/d/1xwtsiUzVPmdQKa7Zy7TOw72cnNdlsKiM/view?usp=sharing)
 - **Arduino-Based Smart Window Blinds**
   - Led a team to create an automated window blind adjustment system.
-  - [Final Project Report](URL_TO_PROJECT_REPORT)
+  - [Final Project Report](https://drive.google.com/file/d/1o-G5HC1sr2drJMrGmJsTDCEat8fit3J1/view?usp=sharing)
 - **Micromouse Project**
   - Built a Micromouse integrating obstacle, line, and wall following features enhanced with a PID controller.
 
-### Awards and Recognition
-- Robotics Distinguished Master Fellowship, The Johns Hopkins University
-- Engineers PEI Graduating Student Award, University of Prince Edward Island
-- Merit-Based Scholarship, Coleman Fung Institute for Engineering Leadership, UC Berkeley
+### Selected Awards and Recognition
+- Robotics Distinguished Master Fellowship (Full Scholarship) - Johns Hopkins University, Maryland 
+- Technical Excellence Award (Development of a Design ---- Solution in the Senior Design Clinic) - UPEI, PE 
+- Engineers PEI Graduating Student Award - UPEI, PE
+- Merit-Based Scholarship, Coleman Fung Institute For Engineering Leadership - UC Berkeley, California 
+- Senior Design (Year 3) Engineering Sustainability Award - UPEI, PE
+- Laurie A Coles Engineering Scholarship (3rd Highest Standing in 2nd year) - UPEI, PE
+- UPEI NSERC-USRA EURA (Engineering Undergraduate Research Award) - UPEI, PE
+- Allan Curran Engineering Award - (FSDE) UPEI, PE
+- 4 x (FSDE) Dean’s Honours List - UPEI, PE
+- 4 x Academic Excellence Award - UPEI, PE
+- Cambridge A levels (A*A*A)
 
 ## Let's Build the Future
 I am excited to engage in projects that challenge the status quo and lead to real-world robotic applications. If you're interested in collaborating or wish to discuss potential projects, please feel free to reach out.
