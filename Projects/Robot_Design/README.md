@@ -39,14 +39,16 @@ The ARM M1 project represents a significant milestone in my engineering journey,
 
 ## Current Fabrication 
 Before leaving Canada, I was able to find sometime to machine some of these parts which are shown here (The only missing part is the end-effector. There was some design challenges I had to take care of and so there's a slight modification in the final design machined parts. 
-<p>
-  <strong>Base</strong><br>
-  <img src="https://github.com/Seyi-roboticist/OluwaseyiR.github.io/blob/main/Projects/Robot_Design/images/IMG_2164.jpeg?raw=true" width="400" alt="Base" style="margin-right: 20px;">
-</p>
-<p>
-  <strong>Joint -- Elbow</strong><br>
-  <img src="https://github.com/Seyi-roboticist/OluwaseyiR.github.io/blob/main/Projects/Robot_Design/images/IMG_2167.jpeg?raw=true" width="400" alt="Joint -- Elbow">
-</p>
+<div style="display: flex; align-items: flex-start; justify-content: space-around;">
+  <div style="text-align: center; margin-right: 20px;">
+    <div style="font-weight: bold; font-size: 18px; margin-bottom: 10px;">Base</div>
+    <img src="https://github.com/Seyi-roboticist/OluwaseyiR.github.io/blob/main/Projects/Robot_Design/images/IMG_2164.jpeg?raw=true" width="400" alt="Base">
+  </div>
+  <div style="text-align: center;">
+    <div style="font-weight: bold; font-size: 18px; margin-bottom: 10px;">Base Link</div>
+    <img src="https://github.com/Seyi-roboticist/OluwaseyiR.github.io/blob/main/Projects/Robot_Design/images/IMG_2167.jpeg?raw=true" width="400" alt="Base Link">
+  </div>
+</div>
 
 
 
