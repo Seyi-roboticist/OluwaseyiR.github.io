@@ -31,6 +31,7 @@ The ARM M1 project represents a significant milestone in my engineering journey,
 
 - Completion of aluminum fabrication for enhanced durability and performance.
 - Integration of a mobile chassis to expand the robot's operational capabilities.
+- Implementation of a real forward and inverse kinematics given my improved knowledge of robot kinematics, dynamics and control. 
 
 ## Current Challenges 
 - Damage laptop 
@@ -66,6 +67,14 @@ Before leaving Canada, I was able to find sometime to machine some of these part
   </tr>
 </table>
 
+<table>
+  <tr>
+    <td style="text-align: center; vertical-align: top;">
+      <strong>Wrist</strong><br>
+      <img src="https://github.com/Seyi-roboticist/OluwaseyiR.github.io/blob/main/Projects/Robot_Design/images/IMG_2166.jpeg?raw=true" width="400" alt="Wrist">
+    </td>
+  </tr>
+</table>
 
  
 ## Acknowledgements
