@@ -32,6 +32,11 @@ The ARM M1 project represents a significant milestone in my engineering journey,
 - Completion of aluminum fabrication for enhanced durability and performance.
 - Integration of a mobile chassis to expand the robot's operational capabilities.
 
+## Current Challenges 
+- Damage laptop 
+	- Lack of Access to Certain 3D Parts: These components are absent but will be reprinted for additional revisions prior to the aluminum machining of the second robotic arm (Arm 2).
+	- PCB Circuit Redesign: Necessity to reconstruct the PCB design from the beginning.
+ 
 ## Acknowledgements
 
 This project would not have been possible without the wealth of knowledge shared by the online engineering and robotics communities. Their tutorials, forums, and videos have been invaluable in this journey.
