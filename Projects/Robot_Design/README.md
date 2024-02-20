@@ -3,7 +3,8 @@
 ## Overview
 
 The ARM M1 project represents a significant milestone in my engineering journey, embodying my most impactful personal project to date. This venture into robotics culminates in the creation of a highly practical, 6-DOF (degree of freedom) robotic arm, inspired by an initial hydraulic design and realized through the capabilities of SolidWorks. Transitioning from a PLA prototype to a refined aluminum construct, the ARM M1 stands as a testament to innovation and personalized engineering solutions.
-![Robot Design](https://github.com/Seyi-roboticist/OluwaseyiR.github.io/blob/main/Projects/Robot_Design/CADpics/Screenshot%202024-02-20%20022158.png?raw=true "Robot Design")
+
+<img src="https://github.com/Seyi-roboticist/OluwaseyiR.github.io/blob/main/Projects/Robot_Design/CADpics/Screenshot%202024-02-20%20022158.png?raw=true" width="500" alt="Robot Design">
 
 
 ## Project Highlights
