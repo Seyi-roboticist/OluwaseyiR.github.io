@@ -14,21 +14,26 @@ Pixy2 pixy;
 
 // Global pin configurations and contant defintions 
 const int encoder0PinA = 2; 
-const int encoder0PinB = 3; 
-volatile long encoder0Pos = 0;
+const int encoder0PinB = 5; 
+const int encoder1PinA = 3; 
+const int encoder1PinB = 6;
+volatile long encoder0Pos = 0; 
+volatile long encoder1Pos = 0; 
 int encoder0PinALast = LOW; 
-volatile int n = LOW;
-const int pingPin {10};
+int encoder1PinALast = LOW; 
+volatile int n0 = LOW;
+volatile int n1 = LOW;
+const int pingPin {46};
 const int IR_left = A0; 
 const int IR_right = A1;  
 const double sideDistance = 12.5; 
 const int pixyDist = 50;
 
 // Encoder parameters for precise navigation 
-const double wheelDiameter = 6.5; // as per DFRobot 65mm Rubber Wheel Pair - Blue. I need very these measurements in person
+const double wheelDiameter = 6.5; // as per DFRobot 65mm Rubber Wheel Pair - Blue. I need very these measurements in person -- measured distance is 6.95cm
 const double wheelCircumference = wheelDiameter * (22.0/7.0); 
 const uint8_t CPR = 48; // As per the pololu-25d-metal-gearmotors
-const double wheelBase = 15; // This need gotten from the CAD
+const double wheelBase = 21.7; // This need gotten from the CAD
 
 
 // Simple state machine for motor movements 
@@ -58,32 +63,41 @@ void setup(){
   // Encoder stuffs 
   pinMode(encoder0PinA, INPUT_PULLUP); 
   pinMode(encoder0PinB, INPUT_PULLUP); 
-  attachInterrupt(digitalPinToInterrupt(encoder0PinA), doEncoderA, CHANGE); 
-  attachInterrupt(digitalPinToInterrupt(encoder0PinB), doEncoderB, CHANGE); 
+  pinMode(encoder1PinA, INPUT_PULLUP); 
+  pinMode(encoder1PinB, INPUT_PULLUP);
+  attachInterrupt(digitalPinToInterrupt(encoder0PinA), doEncoderA0, CHANGE); 
+  attachInterrupt(digitalPinToInterrupt(encoder0PinB), doEncoderB0, CHANGE); 
+  attachInterrupt(digitalPinToInterrupt(encoder1PinA), doEncoderA1, CHANGE); 
+  attachInterrupt(digitalPinToInterrupt(encoder1PinB), doEncoderB1, CHANGE); 
 }
 
 void loop(){
   // So we should continually measure the three distances from the sensor
-  double frontDist = measureDistance(); 
+  double frontDist = measureDistance();
   double leftDist = measureIRDistance(IR_left); 
   double rightDist = measureIRDistance(IR_right);
-
+  Serial.println(rightDist);
   // We will adjust this distance as we see fit -- Perhaps implement a PID controller here
-  if ((leftDist || rightDist) < sideDistance && frontDist < sideDistance)
-  currentState = obstacle_avoidance; 
+  if (((leftDist < sideDistance) || (rightDist < sideDistance)) && frontDist < sideDistance) {
+    currentState = obstacle_avoidance; 
+  }
 
   switch(currentState){
     case idle: {
-      delay(4000); // stay put for 2s 
+      Serial.println("idle");
+      delay(4000); // stay put for 4s 
       currentState = move_forward; 
       break;
     }
     case move_forward: {
-      forward(); // moving forward 
-      checkForCues(); // checking to make sure we can read the cues and its distance 
+      Serial.println("forward");
+      forward(); // moving forward
+      delay(10);
+      checkForCues(); // checking to make sure we can read the cues and its distance
       break;
     }
     case move_backward: {
+      Serial.println("reverse");
       backward();  // reverse
       delay(2000); 
       stop(); 
@@ -91,26 +105,30 @@ void loop(){
       break; 
     }
     case left_turn: {
+      Serial.println("left");
       left(); 
-      delay(1000); 
+      delay(2000); 
       currentState = move_forward; // after turning left move forward (Need to implement logic for encodeder and pi/2)
       break;
     }
     case right_turn: {
+      Serial.println("right");
       right(); 
-      delay(1000); 
+      delay(2000);
       stop(); 
       currentState = move_forward; 
       break;
     }
     case u_turn: {
-      // preliminary design of u_turn 
+      // preliminary design of u_turn
+      Serial.println("u_turn");
       performUturn();
       break;
     }
     case obstacle_avoidance: {
+      Serial.println("avoid");
       stop(); 
-      delay(1000); 
+      delay(2000); 
       currentState = determineTurn(leftDist, rightDist); 
       break;
     }
@@ -141,6 +159,7 @@ double measureIRDistance(int sensorPin) {
 
 // function to check for color blocks using Pixy2 Camera 
 void checkForCues() {
+  Serial.println("I am me");
   pixy.ccc.getBlocks(); // Get color blocks detected by the Pixy2 camera 
   if (pixy.ccc.numBlocks) {
     Serial.print(pixy.ccc.blocks[0].m_signature); 
@@ -154,13 +173,14 @@ void checkForCues() {
     }
     else if (pixy.ccc.blocks[0].m_signature == 3 && pixy.ccc.blocks[0].m_width >= pixyDist){
       currentState = u_turn;
+      Serial.println("U_turn");
     }
   }
 }
 
 // Function to determine the direction turn 
 motorsMove determineTurn(float leftDist, float rightDist){
-  if (leftDist > rightDist) {
+  if (leftDist > rightDist) { // set a threshold for how great the side 
     return left_turn; 
   }
   else {
@@ -174,12 +194,12 @@ double countToDistance(int counts){
 }
 
 // Encoder Functions 
-// Interrupt on A changing state
-void doEncoderA() {
-  n = digitalRead(encoder0PinA); 
+// Interrupt on A0 changing state
+void doEncoderA0() {
+  n0 = digitalRead(encoder0PinA); 
   // I am checking the current state of the encoder here
   // Essentially, if A is changing (from low to high) and if B is high, increment. Otherwise, decrement. 
-  if ((encoder0PinALast == LOW) && (n == HIGH)) {
+  if ((encoder0PinALast == LOW) && (n0 == HIGH)) {
      if (digitalRead(encoder0PinB) == LOW) {
         encoder0Pos--; // CW
      }
@@ -188,15 +208,42 @@ void doEncoderA() {
      }
   }
   // Just like buttonstates, we need to update the last state 
-  encoder0PinALast = n;
+  encoder0PinALast = n0;
 }
-// Interrupt on B changing state
-void doEncoderB() {
+// Interrupt on B0 changing state
+void doEncoderB0() {
   if (digitalRead(encoder0PinA) == digitalRead(encoder0PinB)) {
     encoder0Pos++; //
   }
   else {
     encoder0Pos--;
+  }
+}
+
+// Encoder functions 
+// Encoder 1
+void doEncoderA1() {
+  n1 = digitalRead(encoder1PinA); 
+  // I am checking the current state of the encoder here
+  // Essentially, if A is changing (from low to high) and if B is high, increment. Otherwise, decrement. 
+  if ((encoder1PinALast == LOW) && (n1 == HIGH)) {
+     if (digitalRead(encoder1PinB) == LOW) {
+        encoder0Pos--; // CW
+     }
+     else{
+      encoder0Pos++; // CCW
+     }
+  }
+  // Just like buttonstates, we need to update the last state 
+  encoder1PinALast = n1;
+}
+
+void doEncoderB1() {
+  if (digitalRead(encoder1PinA) == digitalRead(encoder1PinB)) {
+    encoder1Pos++; //
+  }
+  else {
+    encoder1Pos--;
   }
 }
 
@@ -240,21 +287,21 @@ void stop() {
 }
 
 void forward() {
-  robot.setM1Speed(400);
-  robot.setM2Speed(-400);
+  robot.setM1Speed(100);
+  robot.setM2Speed(-100);
 }
 
 void backward() {
-  robot.setM1Speed(-400);
-  robot.setM2Speed(400);
+  robot.setM1Speed(-100);
+  robot.setM2Speed(100);
 }
 
 void left() {
-  robot.setM1Speed(-150);
-  robot.setM2Speed(150);
+  robot.setM1Speed(-37.5);
+  robot.setM2Speed(37.5);
 }
 
 void right() {
-  robot.setM1Speed(150);
-  robot.setM2Speed(-150);
+  robot.setM1Speed(37.5);
+  robot.setM2Speed(-37.5);
 }
