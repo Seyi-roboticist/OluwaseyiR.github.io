@@ -1,6 +1,6 @@
 /*
-  Developer: Seyi R. Afolayan
-  Project: Autonomous Navigation
+  Developer: Group 15 (Team of 2), Software and Electrical Lead -> Seyi R. Afolayan 
+  Project: Lab 3 - Autonomous Navigation
   Improvement: This sketch can be modularized! 
 */ 
 
@@ -13,6 +13,11 @@ DualMAX14870MotorShield robot;
 Pixy2 pixy;
 
 // Global pin configurations and contant defintions 
+const int encoder0PinA = 2; 
+const int encoder0PinB = 3; 
+volatile long encoder0Pos = 0;
+int encoder0PinALast = LOW; 
+volatile int n = LOW;
 const int pingPin {10};
 const int IR_left = A0; 
 const int IR_right = A1;  
@@ -37,25 +42,33 @@ enum motorsMove {
   obstacle_avoidance
 };
 
+// We assumed in the last office hours that we are just moving forward for now 
 motorsMove currentState = move_forward; 
 
 void setup(){
   // Begin the Serial communication
   Serial.begin(115200); 
+
   // Initialize and enable pixy and robot motor drivers, respectively. 
   pixy.init(); 
   robot.enableDrivers(); 
   pinMode(pingPin, OUTPUT); 
   digitalWrite(pingPin, LOW);
+
+  // Encoder stuffs 
+  pinMode(encoder0PinA, INPUT_PULLUP); 
+  pinMode(encoder0PinB, INPUT_PULLUP); 
+  attachInterrupt(digitalPinToInterrupt(encoder0PinA), doEncoderA, CHANGE); 
+  attachInterrupt(digitalPinToInterrupt(encoder0PinB), doEncoderB, CHANGE); 
 }
 
 void loop(){
-  // So continually measure the three distances from the sensor
+  // So we should continually measure the three distances from the sensor
   double frontDist = measureDistance(); 
   double leftDist = measureIRDistance(IR_left); 
   double rightDist = measureIRDistance(IR_right);
 
-  // Adjust this distance as I see fit -- Perhaps implement a PID controller here
+  // We will adjust this distance as we see fit -- Perhaps implement a PID controller here
   if ((leftDist || rightDist) < sideDistance && frontDist < sideDistance)
   currentState = obstacle_avoidance; 
 
@@ -67,7 +80,7 @@ void loop(){
     }
     case move_forward: {
       forward(); // moving forward 
-      checkForCues(); // checking to make sure I can read the cues and its distance 
+      checkForCues(); // checking to make sure we can read the cues and its distance 
       break;
     }
     case move_backward: {
@@ -92,12 +105,7 @@ void loop(){
     }
     case u_turn: {
       // preliminary design of u_turn 
-      // I will need to implement a mapping of encoder count to the motor 
-      right(); 
-      delay(5000); 
-      stop(); 
-      delay(1000); 
-      currentState = move_forward;
+      performUturn();
       break;
     }
     case obstacle_avoidance: {
@@ -165,8 +173,67 @@ double countToDistance(int counts){
   return (counts / (double)CPR) * wheelCircumference;
 }
 
+// Encoder Functions 
+// Interrupt on A changing state
+void doEncoderA() {
+  n = digitalRead(encoder0PinA); 
+  // I am checking the current state of the encoder here
+  // Essentially, if A is changing (from low to high) and if B is high, increment. Otherwise, decrement. 
+  if ((encoder0PinALast == LOW) && (n == HIGH)) {
+     if (digitalRead(encoder0PinB) == LOW) {
+        encoder0Pos--; // CW
+     }
+     else{
+      encoder0Pos++; // CCW
+     }
+  }
+  // Just like buttonstates, we need to update the last state 
+  encoder0PinALast = n;
+}
+// Interrupt on B changing state
+void doEncoderB() {
+  if (digitalRead(encoder0PinA) == digitalRead(encoder0PinB)) {
+    encoder0Pos++; //
+  }
+  else {
+    encoder0Pos--;
+  }
+}
+
+// Implementing the angle to counts function 
+int angleToCounts(double angle) {
+  double arcLength = (2 * (22.0/7.0) * wheelBase * angle) / 360.0; 
+  int counts = (arcLength * CPR) / wheelCircumference; 
+  return counts;
+}
+
+// The Uturn function 
+void performUturn() {
+  static bool isTurning = false; // Obviously, I need to initially set this flag to false 
+  static long startEncoderPos = 0; 
+  
+  // Starting the turn
+  if (!isTurning){
+    startEncoderPos = encoder0Pos; // record the encoder position at this turn and set flag to true
+    isTurning = true; 
+    setMotorSpeed(-200, 200);
+  }
+  long encoderDiff = abs(encoder0Pos - startEncoderPos); 
+  int countsForUturn = angleToCounts(180.0); 
+  if (encoderDiff >= countsForUturn) {
+    stop(); // Essentially, I stop the motors once 180 degree is reached and hopefully facing the next cue
+    isTurning = false; // setting this back to false 
+    currentState = move_forward; // we keep moving until we sense a new obstacle in front
+  }
+
+}
 
 // Motor control functions
+// Might need to implement the setMotorSpeed function for some turning
+void setMotorSpeed(int leftSpeed, int rightSpeed){
+  robot.setM1Speed(leftSpeed); 
+  robot.setM2Speed(rightSpeed);
+}
 void stop() {
   robot.setM1Speed(0);
   robot.setM2Speed(0);
