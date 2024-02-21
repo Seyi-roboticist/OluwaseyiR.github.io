@@ -1,6 +1,6 @@
 /*
-  Developer: Group 15
-  Project: Lab 3 - Autonomous Navigation
+  Developer: Seyi R. Afolayan
+  Project:  Autonomous Navigation
   Improvement: This sketch can be modularized! 
 */ 
 
