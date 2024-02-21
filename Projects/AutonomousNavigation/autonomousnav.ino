@@ -1,6 +1,6 @@
 /*
   Developer: Seyi R. Afolayan
-  Project:  Autonomous Navigation
+  Project: Autonomous Navigation
   Improvement: This sketch can be modularized! 
 */ 
 
@@ -37,7 +37,6 @@ enum motorsMove {
   obstacle_avoidance
 };
 
-// We assumed in the last office hours that we are just moving forward for now 
 motorsMove currentState = move_forward; 
 
 void setup(){
@@ -51,12 +50,12 @@ void setup(){
 }
 
 void loop(){
-  // So we should continually measure the three distances from the sensor
+  // So continually measure the three distances from the sensor
   double frontDist = measureDistance(); 
   double leftDist = measureIRDistance(IR_left); 
   double rightDist = measureIRDistance(IR_right);
 
-  // We will adjust this distance as we see fit -- Perhaps implement a PID controller here
+  // Adjust this distance as I see fit -- Perhaps implement a PID controller here
   if ((leftDist || rightDist) < sideDistance && frontDist < sideDistance)
   currentState = obstacle_avoidance; 
 
@@ -68,7 +67,7 @@ void loop(){
     }
     case move_forward: {
       forward(); // moving forward 
-      checkForCues(); // checking to make sure we can read the cues and its distance 
+      checkForCues(); // checking to make sure I can read the cues and its distance 
       break;
     }
     case move_backward: {
@@ -93,7 +92,7 @@ void loop(){
     }
     case u_turn: {
       // preliminary design of u_turn 
-      // We will need to implement a mapping of encoder count to the motor 
+      // I will need to implement a mapping of encoder count to the motor 
       right(); 
       delay(5000); 
       stop(); 
