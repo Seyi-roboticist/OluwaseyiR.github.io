@@ -82,6 +82,8 @@ void loop(){
     currentState = obstacle_avoidance; 
   }
 
+  adjustWheelSpeeds(); // Adjust wheel speeds based on encoder counts
+
   switch(currentState){
     case idle: {
       Serial.println("idle");
@@ -304,4 +306,34 @@ void left() {
 void right() {
   robot.setM1Speed(37.5);
   robot.setM2Speed(-37.5);
+}
+
+// Function to Adjust the encoder speeds 
+void adjustWheelSpeeds() {
+  const int countThreshold = 15; // I will adjust this based on the encoder count difference 
+  long encoderDiff = abs(encoder0Pos - encoder1Pos); // Get the difference between the wheels 
+
+  // Checking if the difference exceeds the threshold 
+  if (encoderDiff > countThreshold) {
+    // Check which wheel is ahead and adjust the speed 
+    if (encoder0Pos > encoder1Pos)
+      // Left wheel is ahead, we stop or slow it down 
+      robot.setM1Speed(-50); 
+      if (encoderDiff > countThreshold) {
+        robot.setM2Speed(100); 
+      }
+      else {
+        robot.setM2Speed(-50); 
+        if (encoderDiff > countThreshold) {
+          robot.setM1Speed(100); // Adjust speed for the left wheel to catch up
+        }
+
+      }
+
+  }
+  else {
+    // If they are within the set threshold: 
+    robot.setM1Speed(-100); 
+    robot.setM2Speed(100);
+  }
 }
