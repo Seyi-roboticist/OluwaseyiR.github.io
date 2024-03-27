@@ -78,65 +78,44 @@ ASBRContext::index ASBRContext::select_config_from_tree( const std::vector<ASBRC
   return i; // returning the random index generated
 }
 
-/****************************************SAMPLE NEARBY**********************************************/
-// TODO
-ASBRContext::vertex ASBRContext::sample_nearby( const ASBRContext::vertex& q ){
-  ASBRContext::vertex q_rand(q.size()); // error handling definition
-  // TODO
-  // Generate a random configuration near q
-  // Let me define a nearby distance to be within 3 degrees.
-  const double MAX_DEVIATION = M_PI/15; // The workspace for the UR5 using the trajectory controller is -pi to pi
-  std::random_device random_num;
-  std::mt19937 gen(random_num());
-  std::normal_distribution <> gaussian_generator(0, 1); // normal (gaussian) distribution
-
-  // Attempt counter and limit to check for samples nearby
-  const int MAX_ATTEMPTS{1000};
-  int attempts{0};
-
-   // Main logic for generating the nearby sample
-  do {
-      for (size_t i{0}; i < q.size(); ++i)
-          q_rand[i] = gaussian_generator(gen); // sample a random value for each dimension
-      // Calculating the Euclidean Norm
-      // double q_rand_norm = std::sqrt(std::inner_product(q_rand.begin(), q_rand.end(), q_rand.begin(), 0.0));
-      for (size_t i{0}; i < q.size(); ++i){
-          q_rand[i] = q[i] + MAX_DEVIATION * q_rand[i];
-         // q_rand[i] = q[i] + MAX_DEVIATION * (q_rand[i] / q_rand_norm); // centre + (deviation * val(- 1, 1)).
-      }
-      ++attempts;
-      // I need to return something if we exceed the limit
-      if (attempts >= MAX_ATTEMPTS)
-          return q;
-  } while (state_collides(q_rand));
-  
-  std::cout << "Printing q_rand[1]" << q_rand[1] << " " << q[1] << std::endl; 
- 
-
-//  do {
-//      double q_rand_norm = 0;
-//      for (size_t i = 0; i < q.size(); ++i) {
-//          double rand_val = gaussian_generator(gen);
-//          q_rand[i] = rand_val;
-//          q_rand_norm += rand_val * rand_val;
-//      }
-//      q_rand_norm = std::sqrt(q_rand_norm);
-//      double scale = MAX_DEVIATION;
-//      if (q_rand_norm > 1.0)
-//          scale /= q_rand_norm;
-//      for (size_t i = 0; i < q.size(); ++i) {
-//          q_rand[i] = q[i] + scale * q_rand[i];
-//          q_rand[i] = fmod(q_rand[i] + M_PI, 2 * M_PI) - M_PI;
-//      }
-//      ++attempts;
-//      if (attempts >= MAX_ATTEMPTS)
-//          throw std::runtime_error("Maximum attempts reached without finding a collision-free nearby configuration.");
-//  } while (state_collides(q_rand));
-
-  return q_rand;
-}
-
-
+///****************************************SAMPLE NEARBY**********************************************/
+//ASBRContext::vertex ASBRContext::sample_nearby( const ASBRContext::vertex& q ){
+//    ASBRContext::vertex q_rand(q.size()); // error handling definition
+//
+//    const double MAX_DEVIATION = M_PI/90;
+//    std::random_device random_num;
+//    std::mt19937 gen(random_num());
+//    std::normal_distribution <> gaussian_generator(0, 1);
+//
+//    const int MAX_ATTEMPTS{1000};
+//    int attempts{0};
+//    const double denomFix = 1e-6;
+//
+//    do {
+//        for (size_t i{0}; i < q.size(); ++i)
+//            q_rand[i] = gaussian_generator(gen);
+//
+//        double q_rand_norm = std::sqrt(std::inner_product(q_rand.begin(), q_rand.end(), q_rand.begin(), 0.0));
+//
+//        ++attempts;
+//        if (attempts >= MAX_ATTEMPTS) {
+//            return q;
+//        }
+//
+//        if(q_rand_norm < denomFix) {
+//            continue;
+//        }
+//
+//        for (size_t i{0}; i < q.size(); ++i) {
+//            q_rand[i] = q[i] + MAX_DEVIATION * (q_rand[i] / q_rand_norm);
+//        }
+//
+//    } while (state_collides(q_rand));
+//
+//    std::cout << "Printing q_rand[1]" << q_rand[1] << " " << q[1] << std::endl;
+//
+//    return q_rand;
+//}
 
 //ASBRContext::vertex ASBRContext::sample_nearby(const ASBRContext::vertex& q) {
 //    ASBRContext::vertex q_rand(q.size());
@@ -184,6 +163,42 @@ ASBRContext::vertex ASBRContext::sample_nearby( const ASBRContext::vertex& q ){
 //    return angle;
 //}
 
+/****************************************SAMPLE NEARBY**********************************************/
+// TODO
+ASBRContext::vertex ASBRContext::sample_nearby( const ASBRContext::vertex& q ){
+    ASBRContext::vertex q_rand(q.size()); // error handling definition
+    // TODO
+    // Generate a random configuration near q
+    // Let me define a nearby distance to be within 3 degrees.
+    const double MAX_DEVIATION = M_PI/60; // The workspace for the UR5 using the trajectory controller is -pi to pi
+    std::random_device random_num;
+    std::mt19937 gen(random_num());
+    std::normal_distribution <> gaussian_generator(0, 1); // normal (gaussian) distribution
+
+    // Attempt counter and limit to check for samples nearby
+    const int MAX_ATTEMPTS{60000};
+    int attempts{0};
+
+    // Main logic for generating the nearby sample
+    do {
+        for (size_t i{0}; i < q.size(); ++i)
+            q_rand[i] = gaussian_generator(gen); // sample a random value for each dimension
+        // Calculating the Euclidean Norm
+        // double q_rand_norm = std::sqrt(std::inner_product(q_rand.begin(), q_rand.end(), q_rand.begin(), 0.0));
+        for (size_t i{0}; i < q.size(); ++i){
+            q_rand[i] = q[i] + MAX_DEVIATION * q_rand[i];
+            // q_rand[i] = q[i] + MAX_DEVIATION * (q_rand[i] / q_rand_norm); // centre + (deviation * val(- 1, 1)).
+        }
+        ++attempts;
+        // I need to return something if we exceed the limit
+        if (attempts >= MAX_ATTEMPTS)
+            return q;
+    } while (state_collides(q_rand));
+
+    std::cout << "Printing q_rand[1]" << q_rand[1] << " " << q[1] << std::endl;
+    return q_rand;
+}
+
 
 /**********************************LOCAL PATH COLLISION CHECK**************************************/
 // TODO
@@ -205,35 +220,35 @@ bool ASBRContext::is_local_path_collision_free( const ASBRContext::vertex& q,
   // Else, qt at t is not in collision
   return true;
 }
-
-/*****************************SEARCH PATH ---> HEAD RECURSION ALGORITHM******************************/
+//
+// *****************************SEARCH PATH ---> HEAD RECURSION ALGORITHM******************************/
 // TODO
 // check search path
 ASBRContext::path ASBRContext::search_path( const std::vector<vertex>& V,
- 					      const std::vector<index>& parent,
- 					      const index& idx_init,
-					      const index& idx_goal ){
-  ASBRContext::path P;
-  // If things are getting weird, try to pass parent by reference instead of value (I changed to reference)
-  // TODO Once q_goal has been added to the tree, find the path (sequence of configurations) between
-  // q_init and q_goal (hint: this is easier by using recursion).
-  // Base case
-  if (idx_init == idx_goal)
-      P.push_back(V[idx_init]); // advanced way {V[idx_init]}
+                                            const std::vector<index>& parent,
+                                            const index& idx_init,
+                                            const index& idx_goal ){
+    ASBRContext::path P;
+    // If things are getting weird, try to pass parent by reference instead of value (I changed to reference)
+    // TODO Once q_goal has been added to the tree, find the path (sequence of configurations) between
+    // q_init and q_goal (hint: this is easier by using recursion).
+    // Base case
+    if (idx_init == idx_goal)
+        P.push_back(V[idx_init]); // advanced way {V[idx_init]}
 
-      // Think about implement the parent naturally
-  // Recursive case
-  else{
-      // Pretty much saying don't go all the way to the goal yet;
-      // First get to the place we came from just before we reached the goal.
-      // So the output will be from q_goal to q_init
-      // Note that parent is an array of indices, and we are recursively chaining from back to front
-      P = search_path(V, parent, idx_init, parent[idx_goal]); // the recursive call
-      P.push_back(V[idx_goal]); // append this goal to the path and call again if necessary
-  }
-  // cout from q_init to q_goal
-  // std::reverse(P.begin(), P.end()); // reversing the path -- this is wrong
-  return P;
+        // Think about implement the parent naturally
+        // Recursive case
+    else{
+        // Pretty much saying don't go all the way to the goal yet;
+        // First get to the place we came from just before we reached the goal.
+        // So the output will be from q_goal to q_init
+        // Note that parent is an array of indices, and we are recursively chaining from back to front
+        P = search_path(V, parent, idx_init, parent[idx_goal]); // the recursive call
+        P.push_back(V[idx_goal]); // append this goal to the path and call again if necessary
+    }
+    // cout from q_init to q_goal
+    // std::reverse(P.begin(), P.end()); // reversing the path -- this is wrong
+    return P;
 }
 
 /***************************************NEAREST CONFIGURATION************************************************/
@@ -278,8 +293,8 @@ ASBRContext::path ASBRContext::est( const ASBRContext::vertex& q_init,
   // flip the order for one of the trees
   // Since I have q_init and q_goal as input parameters, I need to initialize their indices as well.
   ASBRContext::index idx_q_init{0};
-  ASBRContext::index idx_q_goal;
-  const int MAX_ITERATIONS{6000};
+  ASBRContext::index idx_q_goal{std::numeric_limits<ASBRContext::index>::max()}; // Use max value as a placeholder.
+  const int MAX_ITERATIONS{20000};
 
   // EST Algorithm Implementation
   std::cout << "Starting the legendary EST algorithm implementation..." << std::endl;
