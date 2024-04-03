@@ -36,19 +36,29 @@ I'm on a quest to create impactful engineering solutions and foster innovation. 
   - MicroFluidics, CubeSat Power Subsystem Engineering
 
 ### Selected Projects
+
 - **Robot Manipulation $\implies$ Implementation of a Path Planning Algorithm Using MoveIt!**
-  - ![ur5EST](https://github.com/Seyi-roboticist/OluwaseyiR.github.io/assets/143431845/cdd1d19e-3765-42c3-9cce-d4a27d502e23)
-  - See the project description at [UR5 Path Planning Page](https://github.com/Seyi-roboticist/OluwaseyiR.github.io/tree/main/Projects/Path_Planning)
+  <br>![ur5EST](https://github.com/Seyi-roboticist/OluwaseyiR.github.io/assets/143431845/cdd1d19e-3765-42c3-9cce-d4a27d502e23)
+  <br>See the project description at [UR5 Path Planning Page](https://github.com/Seyi-roboticist/OluwaseyiR.github.io/tree/main/Projects/Path_Planning)
+
+<br>
 
 - **Robotic Arm Design**
-  - Designed, fabricated and Controlled a Robot Arm Design
-  - [Project Page](https://github.com/Seyi-roboticist/OluwaseyiR.github.io/tree/main/Projects/Robot_Design)
+  <br>Designed, fabricated, and controlled a Robot Arm Design.
+  <br>[Project Page](https://github.com/Seyi-roboticist/OluwaseyiR.github.io/tree/main/Projects/Robot_Design)
+
+<br>
+    
 - **Robot Manipulation ⇒ UR5 Robotic Arm Control**
-![Seyi's%20Video%20-%20Apr%203%2C%202024](https://github.com/Seyi-roboticist/OluwaseyiR.github.io/assets/143431845/c90ffc7d-1856-41c0-b7ab-4463ea19785c)
-  - Developed algorithms for precise robotic arm movement and control.
+  <br>![Seyi's Video - Apr 3, 2024](https://github.com/Seyi-roboticist/OluwaseyiR.github.io/assets/143431845/c90ffc7d-1856-41c0-b7ab-4463ea19785c)
+  <br>Developed algorithms for precise robotic arm movement and control.
+
+<br>
  
 - **Mechatronics $\implies$ Autonomous Navigation Using IMU**
-![giphy-2](https://github.com/Seyi-roboticist/OluwaseyiR.github.io/assets/143431845/e2be8889-235b-4072-83e4-30efd551662b)
+  <br>![giphy-2](https://github.com/Seyi-roboticist/OluwaseyiR.github.io/assets/143431845/e2be8889-235b-4072-83e4-30efd551662b)
+  <br>Implemented autonomous navigation techniques using IMU sensors.
+
 
 - **Arduino-Based Smart Window Blinds**
   - Led a team to create an automated window blind adjustment system.
