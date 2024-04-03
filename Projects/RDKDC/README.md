@@ -38,8 +38,11 @@ Similar to resolved-rate control but uses the transpose of the body jacobian ins
 ### Extra Credit: Batman Symbol Drawing
 
 Utilizing intricate mathematical equations, I plotted specific points to render the Batman symbol with the UR5 robot arm to help my team get some extra credit.
+<p>
+  <img width="381" alt="Screenshot 2024-04-03 at 4 56 15 PM" src="https://github.com/Seyi-roboticist/OluwaseyiR.github.io/assets/143431845/2bd0c95d-0571-49d4-9c3f-81174033d52f">
+  <img width="408" alt="Screenshot 2024-04-03 at 4 56 48 PM" src="https://github.com/Seyi-roboticist/OluwaseyiR.github.io/assets/143431845/27b36d31-3653-4056-a828-0f023ad41cec">
+</p>
 
-![Batman Symbol Drawing](data:image/png;base64,<Base64>)
 
 ## Code Structure
 
