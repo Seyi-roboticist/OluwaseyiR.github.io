@@ -55,4 +55,18 @@ The project's codebase is structured into several MATLAB scripts and functions, 
 ## Conclusion
 
 This project successfully demonstrates the application of various control schemes to perform precise tasks with the UR5 robot arm. Through the methodologies implemented, we have showcased the robot's ability to execute complex drawing tasks, highlighted by the creation of the Batman symbol.
+Throughout our documentation, we've included photos demonstrating the robot in action, beginning its tasks, executing line drawings, and achieving final positions with remarkable accuracy.
+
+## Team Members
+
+- Seyi R. Afolayan
+- Tarun Prasad
+- Senthilvel Tushar Singh
+- Zachary Frey
+
+## Acknowledgements
+
+We thank Jin Seob Kim, Ph.D., Senior Lecturer ME Dept. LCSR JHU, for his guidance and support throughout this project.
+
+For more detailed information on our algorithms, control schemes, and the results of our project, please refer to the included sections and figures within our repository.
 
