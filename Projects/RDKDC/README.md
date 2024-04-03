@@ -21,7 +21,8 @@ This project focuses on precisely controlling the UR5 robot arm to perform a "pl
 
 The IK algorithm was tasked with positioning the start and end pose of the robot and then drawing three line segments to connect them. It allows for control over how the shape is drawn by adjusting the length of the parallel line segments and the number of steps per line.
 
-![Figure 1: Robot beginning the first line](https://github.com/Seyi-roboticist/OluwaseyiR.github.io/assets/143431845/95cb3193-2573-4cf3-bfb5-dd9a08080a45)
+![Figure 1: Robot beginning the first line](<img width="523" alt="Screenshot 2024-04-03 at 4 38 20 PM" src="https://github.com/Seyi-roboticist/OluwaseyiR.github.io/assets/143431845/95cb3193-2573-4cf3-bfb5-dd9a08080a45">
+)
 
 
 ![Figure 2: Robot starting the second line](data:image/png;base64,<Base64>)
