@@ -29,19 +29,15 @@ The IK algorithm was tasked with positioning the start and end pose of the robot
 
 ### Resolved-Rate Control
 
-This function uses forward kinematics and the body Jacobian to control the robot's motion from a start pose to a goal pose, moving through 3 consecutive perpendicular lines.
-
-![Figure 3: Robot approaching the end position](data:image/png;base64,<Base64>)
+The resolve-rate function uses forward kinematics and the body Jacobian to control the robot's motion from a start pose to a goal pose, moving through 3 consecutive perpendicular lines.
 
 ### Jacobian Transpose
 
 Similar to resolved-rate control but uses the transpose of the body jacobian instead of its inverse, aiming to move the robot through a straight line from start to goal pose.
 
-![Figure 4: Robot at the end position](data:image/png;base64,<Base64>)
-
 ### Extra Credit: Batman Symbol Drawing
 
-Utilizing intricate mathematical equations, we plotted specific points to render the Batman symbol with the UR5 robot arm.
+Utilizing intricate mathematical equations, I plotted specific points to render the Batman symbol with the UR5 robot arm to help my team get some extra credit.
 
 ![Batman Symbol Drawing](data:image/png;base64,<Base64>)
 
