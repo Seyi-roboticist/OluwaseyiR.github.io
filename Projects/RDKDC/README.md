@@ -60,13 +60,13 @@ Throughout our documentation, we've included photos demonstrating the robot in a
 ## Team Members
 
 - Seyi R. Afolayan
-- Tarun Prasad
-- Senthilvel Tushar Singh
+- Tarun PrasadSenthilvel
+- Tushar Singh
 - Zachary Frey
 
 ## Acknowledgements
 
 We thank Jin Seob Kim, Ph.D., Senior Lecturer ME Dept. LCSR JHU, for his guidance and support throughout this project.
 
-For more detailed information on our algorithms, control schemes, and the results of our project, please refer to the included sections and figures within our repository.
+For more detailed information on our algorithms, control schemes, and the results of our project, please contact me!
 
