@@ -24,10 +24,11 @@ The IK algorithm was tasked with positioning the start and end pose of the robot
   <img width="523" alt="Screenshot 2024-04-03 at 4 38 20 PM" src="https://github.com/Seyi-roboticist/OluwaseyiR.github.io/assets/143431845/95cb3193-2573-4cf3-bfb5-dd9a08080a45">
   <figcaption>Figure 1: Robot beginning the first line</figcaption>
 </figure>
+<figure>
+  <img width="773" alt="Screenshot 2024-04-03 at 4 41 30 PM" src="https://github.com/Seyi-roboticist/OluwaseyiR.github.io/assets/143431845/9834414b-dae7-42da-ab40-20542fb8f776">
+  <figcaption>Figure 1: Robot starting the second line</figcaption>
+</figure>
 
-
-
-![Figure 2: Robot starting the second line](data:image/png;base64,<Base64>)
 
 ### Resolved-Rate Control
 
