@@ -1,6 +1,6 @@
 
 # UR5 Robot "Place-and-Draw" Task Project
-
+ ![Seyi's%20Video%20-%20Apr%203%2C%202024](https://github.com/Seyi-roboticist/OluwaseyiR.github.io/assets/143431845/c90ffc7d-1856-41c0-b7ab-4463ea19785c)
 ## Introduction
 
 This project focuses on precisely controlling the UR5 robot arm to perform a "place-and-draw" task. Our team has enabled the UR5 to identify start and target locations and automate the task using various control schemes. We have implemented and demonstrated three distinct control trajectories for the UR5 in both simulated and real-world settings, namely:
