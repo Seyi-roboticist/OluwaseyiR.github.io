@@ -43,7 +43,8 @@ I'm on a quest to create impactful engineering solutions and foster innovation. 
 - **Robotic Arm Design**
   - Designed, fabricated and Controlled a Robot Arm Design
   - [Project Page](https://github.com/Seyi-roboticist/OluwaseyiR.github.io/tree/main/Projects/Robot_Design)
-- **UR5 Robotic Arm Control**
+- **Robot Manipulation ⇒ UR5 Robotic Arm Control**
+  - ![Seyi's%20Video%20-%20Apr%203%2C%202024](https://github.com/Seyi-roboticist/OluwaseyiR.github.io/assets/143431845/c90ffc7d-1856-41c0-b7ab-4463ea19785c)
   - Developed algorithms for precise robotic arm movement and control.
   - [Final Project Report](https://drive.google.com/file/d/1xwtsiUzVPmdQKa7Zy7TOw72cnNdlsKiM/view?usp=sharing)
 - **Arduino-Based Smart Window Blinds**
