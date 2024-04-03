@@ -27,7 +27,7 @@ I'm on a quest to create impactful engineering solutions and foster innovation. 
   - Robotics (Perception and Cognitive Systems)
   - Master of Science in Engineering, Expected Graduation: 2025
 - **University of Prince Edward Island**
-  - Mechatronics Sustainable Design Engineering
+  - Mechatronics Sustainable Design Engineering $\implies$ Summa Cum Laude (First Class Standing)
 
 ### Experience Snapshot
 - **Undergraduate Teaching Assistantship**
@@ -36,7 +36,7 @@ I'm on a quest to create impactful engineering solutions and foster innovation. 
   - MicroFluidics, CubeSat Power Subsystem Engineering
 
 ### Selected Projects
-- **Robot Manipulation ⇒ Implementation of a Path Planning Algorithm Using MoveIt!**
+- **Robot Manipulation $\implies$ Implementation of a Path Planning Algorithm Using MoveIt!**
   - ![ur5EST](https://github.com/Seyi-roboticist/OluwaseyiR.github.io/assets/143431845/cdd1d19e-3765-42c3-9cce-d4a27d502e23)
   - See the project description at [UR5 Path Planning Page](https://github.com/Seyi-roboticist/OluwaseyiR.github.io/tree/main/Projects/Path_Planning)
 
