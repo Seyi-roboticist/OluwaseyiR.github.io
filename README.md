@@ -48,7 +48,7 @@ I'm on a quest to create impactful engineering solutions and foster innovation. 
   - Developed algorithms for precise robotic arm movement and control.
  
 - **Mechatronics $\implies$ Autonomous Navigation Using IMU**
-https://github.com/Seyi-roboticist/OluwaseyiR.github.io/assets/143431845/4248247a-6613-4e98-a76a-4cbda6416c70
+<iframe src="https://giphy.com/embed/6lQUP4FiCZUah5ZWCK" width="270" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/6lQUP4FiCZUah5ZWCK">via GIPHY</a></p>
 
 
 - **Arduino-Based Smart Window Blinds**
