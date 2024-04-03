@@ -10,7 +10,7 @@ Welcome to my engineering portfolio. I am a passionate design engineer and robot
 
 ### Core Competencies
 - **Programming Languages:** C, C++, Java, Python, Matlab, and more.
-- **Engineering Software:** SolidWorks, LabVIEW, ROS2, Gazebo, Git.
+- **Engineering Software:** SolidWorks, LabVIEW, ROS2, Gazebo, Git, SLAM, MoveIt!.
 - **Design and Fabrication:** Proficient in 3D Printing, Woodwork, Water-Jet Cutting, and Soldering.
 
 ### Areas of Interest
@@ -63,7 +63,7 @@ I'm on a quest to create impactful engineering solutions and foster innovation. 
 - Allan Curran Engineering Award - (FSDE) UPEI, PE
 - 4 x (FSDE) Dean’s Honours List - UPEI, PE
 - 4 x Academic Excellence Award - UPEI, PE
-- Cambridge A levels (A*A*A)
+- Cambridge A levels (A\*A\*A)
 
 ## Let's Build the Future
 I am excited to engage in projects that challenge the status quo and lead to real-world robotic applications. If you're interested in collaborating or wish to discuss potential projects, please feel free to reach out.
