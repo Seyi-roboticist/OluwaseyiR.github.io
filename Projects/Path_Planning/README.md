@@ -15,6 +15,7 @@ Some of the key features of what I did include the following:
 - **Dynamic Obstacle Integration**: Supports adding and configuring obstacles within the planning scene.
 - **Goal Configuration**: Allows for the setting of specific target states for the robot.
 - **Visualization and Simulation**: Integrated with RViz for real-time visualization of the robot's motion and planning environment.
+- **Physical Test**: Tested the algorithm with a real UR5.
 
 ## Getting Started
 
