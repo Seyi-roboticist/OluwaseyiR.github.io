@@ -1,5 +1,6 @@
 
 # UR5 Robot EST Path Planner
+![ur5EST](https://github.com/Seyi-roboticist/OluwaseyiR.github.io/assets/143431845/cdd1d19e-3765-42c3-9cce-d4a27d502e23)
 
 This repository is dedicated to the development of an Expansive Space Tree (EST) path planner for the UR5 robot arm. The project integrates with the MoveIt! library to enable complex motion planning capabilities within a ROS (Robot Operating System) environment. This work was undertaken as part of the "Algorithm for Sensor-Based Robotics" course.
 
