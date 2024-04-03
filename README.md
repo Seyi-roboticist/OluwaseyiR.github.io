@@ -36,6 +36,9 @@ I'm on a quest to create impactful engineering solutions and foster innovation. 
   - MicroFluidics, CubeSat Power Subsystem Engineering
 
 ### Selected Projects
+- **Robot Manipulation =⇒ Implementation of a Path Planning Algorithm Using MoveIt!
+  - ![ur5EST](https://github.com/Seyi-roboticist/OluwaseyiR.github.io/assets/143431845/cdd1d19e-3765-42c3-9cce-d4a27d502e23)
+
 - **Robotic Arm Design
   - Designed, fabricated and Controlled a Robot Arm Design
   - [Project Page](https://github.com/Seyi-roboticist/OluwaseyiR.github.io/tree/main/Projects/Robot_Design)
