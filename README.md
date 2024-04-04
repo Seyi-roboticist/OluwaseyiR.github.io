@@ -46,7 +46,8 @@ I'm on a quest to create impactful engineering solutions and foster innovation. 
 ### Robotic Arm Design
 - Designed, fabricated, and controlled a robotic arm, demonstrating advanced design and control techniques.
 - [Project Page](https://github.com/Seyi-roboticist/OluwaseyiR.github.io/tree/main/Projects/Robot_Design)  
-![Robot Arm Design]![fre](https://github.com/Seyi-roboticist/OluwaseyiR.github.io/assets/143431845/4a91cea4-ad13-4008-bac2-c505d4b2f155)
+<img src="https://github.com/Seyi-roboticist/OluwaseyiR.github.io/assets/143431845/4a91cea4-ad13-4008-bac2-c505d4b2f155" width="350" alt="fre">
+
 
 ### Robot Manipulation - UR5 Robotic Arm Control
 - Engineered algorithms for precise control over the UR5 robotic arm's movements.  
