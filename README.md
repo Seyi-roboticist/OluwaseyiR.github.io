@@ -35,37 +35,32 @@ I'm on a quest to create impactful engineering solutions and foster innovation. 
 - **Undergraduate Research Assistantship**
   - MicroFluidics, CubeSat Power Subsystem Engineering
 
-### Selected Projects
+## Selected Projects
 
-- **Robot Manipulation $\implies$ Implementation of a Path Planning Algorithm Using MoveIt!**
-  <br>![ur5EST](https://github.com/Seyi-roboticist/OluwaseyiR.github.io/assets/143431845/cdd1d19e-3765-42c3-9cce-d4a27d502e23)
-  <br>See the project description at [UR5 Path Planning Page](https://github.com/Seyi-roboticist/OluwaseyiR.github.io/tree/main/Projects/Path_Planning)
+### Robot Manipulation - Implementation of a Path Planning Algorithm Using MoveIt!
+- Developed and implemented a path planning algorithm for robot manipulation using the MoveIt! toolkit.
+- [UR5 Path Planning Page](https://github.com/Seyi-roboticist/OluwaseyiR.github.io/tree/main/Projects/Path_Planning)
+![ur5EST](https://github.com/Seyi-roboticist/OluwaseyiR.github.io/assets/143431845/cdd1d19e-3765-42c3-9cce-d4a27d502e23)
 
-<br>
+### Robotic Arm Design
+- Designed, fabricated, and controlled a robotic arm, demonstrating advanced design and control techniques.
+- [Project Page](https://github.com/Seyi-roboticist/OluwaseyiR.github.io/tree/main/Projects/Robot_Design)
 
-- **Robotic Arm Design**
-  <img src="https://github.com/Seyi-roboticist/OluwaseyiR.github.io/blob/main/Projects/Robot_Design/CADpics/Screenshot%202024-02-20%20022158.png?raw=true" width="500" alt="Robot Design">
-  <br>Designed, fabricated, and controlled a Robot Arm Design.
-  <br>[Project Page](https://github.com/Seyi-roboticist/OluwaseyiR.github.io/tree/main/Projects/Robot_Design)
+### Robot Manipulation - UR5 Robotic Arm Control
+- Engineered algorithms for precise control over the UR5 robotic arm's movements.
+![Seyi's Video - Apr 3, 2024](https://github.com/Seyi-roboticist/OluwaseyiR.github.io/assets/143431845/c90ffc7d-1856-41c0-b7ab-4463ea19785c)
 
-<br>
-    
-- **Robot Manipulation ⇒ UR5 Robotic Arm Control**
-  <br>![Seyi's Video - Apr 3, 2024](https://github.com/Seyi-roboticist/OluwaseyiR.github.io/assets/143431845/c90ffc7d-1856-41c0-b7ab-4463ea19785c)
-  <br>Developed algorithms for precise robotic arm movement and control.
+### Mechatronics - Autonomous Navigation Using IMU
+- Implemented techniques for autonomous navigation leveraging IMU sensor data.
+![Autonomous Navigation](https://github.com/Seyi-roboticist/OluwaseyiR.github.io/assets/143431845/e2be8889-235b-4072-83e4-30efd551662b)
 
-<br>
- 
-- **Mechatronics $\implies$ Autonomous Navigation Using IMU**
-  <br>![giphy-2](https://github.com/Seyi-roboticist/OluwaseyiR.github.io/assets/143431845/e2be8889-235b-4072-83e4-30efd551662b)
-  <br>Implemented autonomous navigation techniques using IMU sensors.
+### Arduino-Based Smart Window Blinds
+- Led the development of an Arduino-based system for automating window blind adjustments.
+- [Final Project Report](https://drive.google.com/file/d/1o-G5HC1sr2drJMrGmJsTDCEat8fit3J1/view?usp=sharing)
 
+### Micromouse Project
+- Constructed a Micromouse robot incorporating obstacle detection, line following, and wall tracking, optimized with a PID controller.
 
-- **Arduino-Based Smart Window Blinds**
-  - Led a team to create an automated window blind adjustment system.
-  - [Final Project Report](https://drive.google.com/file/d/1o-G5HC1sr2drJMrGmJsTDCEat8fit3J1/view?usp=sharing)
-- **Micromouse Project**
-  - Built a Micromouse integrating obstacle, line, and wall following features enhanced with a PID controller.
 
 ### Selected Awards and Recognition
 - Robotics Distinguished Master Fellowship (Full Scholarship) - Johns Hopkins University, Maryland 
