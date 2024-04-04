@@ -44,6 +44,7 @@ I'm on a quest to create impactful engineering solutions and foster innovation. 
 <br>
 
 - **Robotic Arm Design**
+  <img src="https://github.com/Seyi-roboticist/OluwaseyiR.github.io/blob/main/Projects/Robot_Design/CADpics/Screenshot%202024-02-20%20022158.png?raw=true" width="500" alt="Robot Design">
   <br>Designed, fabricated, and controlled a Robot Arm Design.
   <br>[Project Page](https://github.com/Seyi-roboticist/OluwaseyiR.github.io/tree/main/Projects/Robot_Design)
 
