@@ -15,6 +15,7 @@ Welcome to my engineering portfolio. I am a passionate design engineer and robot
 
 ### Areas of Interest
 - Aerial Robotics
+- Underwater Robotics (Extreme Environments)
 - Field Robotics
 - Robotic Manipulators
 - Legged Robotics
