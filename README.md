@@ -14,6 +14,7 @@ Welcome to my engineering portfolio. I am a passionate design engineer and robot
 - **Design and Fabrication:** Proficient in 3D Printing, Woodwork, Water-Jet Cutting, and Soldering.
 
 ### Areas of Interest
+- Robot Perception
 - Aerial Robotics
 - Underwater Robotics (Extreme Environments)
 - Field Robotics
