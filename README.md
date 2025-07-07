@@ -77,15 +77,12 @@ Distinguished robotics engineer with **Master's degree from Johns Hopkins Univer
 ### **Johns Hopkins University** | *Baltimore, MD*
 **Master of Science in Engineering - Robotics** | *August 2023 - May 2025*
 - **Specialization:** Control & Perception Systems
-- **Fellowship:** Robotics Distinguished Master Fellowship (Full Scholarship)
 - **Research Focus:** Real-time control systems, sensor-driven robotics
 - **Key Coursework:** Control Theory, Robot Perception, Machine Learning
 
 ### **University of Prince Edward Island** | *Charlottetown, PE, Canada*
 **Bachelor of Science - Mechatronics, Sustainable Design Engineering** | *September 2019 - April 2023*
 - **Graduation:** Summa Cum Laude (First Class Standing)
-- **Academic Achievement:** Cambridge A-levels (A\*A\*A\*)
-- **Recognition:** 4x Dean's Honours List, Multiple Engineering Awards
 
 ---
 
