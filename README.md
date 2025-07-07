@@ -12,7 +12,7 @@
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/oluwaseyi-r-afolayan-4b8330206/)
 [![GitHub](https://img.shields.io/badge/GitHub-Portfolio-181717?style=for-the-badge&logo=github)](https://github.com/Seyi-roboticist)
 
-**🌍 Location:** Baltimore, MD | **🚀 Status:** Open to Relocation | **💼 Clearance:** Eligible for Security Clearance
+**🌍 Location:** Baltimore, MD | **🚀 Status:** Open to Relocation | **💼 Visa:** OPT Work Authorization Clearance
 
 </div>
 
