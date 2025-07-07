@@ -12,7 +12,7 @@
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/oluwaseyi-r-afolayan-4b8330206/)
 [![GitHub](https://img.shields.io/badge/GitHub-Portfolio-181717?style=for-the-badge&logo=github)](https://github.com/Seyi-roboticist)
 
-**🌍 Location:** Baltimore, MD | **🚀 Status:** Open to Relocation | **💼 Visa:** OPT Work Authorization 
+**🌍 Location:** Baltimore, MD | **🚀 Status:** Open to Relocation | **💼 Visa:** OPT Work Authorization Clearance
 
 </div>
 
@@ -36,7 +36,7 @@ Distinguished robotics engineer with **Master's degree from Johns Hopkins Univer
 <tr>
 <td valign="top" width="50%">
 
-### **Advanced Control Systems**
+### **ROS2 Control Systems**
 - Real-time control loops (500Hz+)
 - PID with anti-windup & derivative filtering
 - Jacobian-based inverse kinematics
@@ -79,7 +79,7 @@ Distinguished robotics engineer with **Master's degree from Johns Hopkins Univer
 - **Specialization:** Control & Perception Systems
 - **Fellowship:** Robotics Distinguished Master Fellowship (Full Scholarship)
 - **Research Focus:** Real-time control systems, sensor-driven robotics
-- **Key Coursework:** Advanced Control Theory, Robot Perception, Machine Learning
+- **Key Coursework:** Control Theory, Robot Perception, Machine Learning
 
 ### **University of Prince Edward Island** | *Charlottetown, PE, Canada*
 **Bachelor of Science - Mechatronics, Sustainable Design Engineering** | *September 2019 - April 2023*
@@ -188,7 +188,7 @@ Distinguished robotics engineer with **Master's degree from Johns Hopkins Univer
 **Engineering Excellence:**
 - Full mechanical design with CAD modeling and analysis
 - Multi-actuator integration with precise positioning control
-- Advanced control techniques with feedback systems
+- Control techniques with feedback systems
 - Manufacturing and assembly using modern fabrication methods
 
 **Project Details:** [Project Page](https://github.com/Seyi-roboticist/OluwaseyiR.github.io/tree/main/Projects/Robot_Design)
@@ -260,10 +260,10 @@ Distinguished robotics engineer with **Master's degree from Johns Hopkins Univer
 
 ### 🔧 **Additional Engineering Projects**
 
-**Robot Devices: Serial Manipulator Control** | *Advanced Control Theory*
+**Robot Devices: Serial Manipulator Control** | *ROS2 Control Systems*
 - Implemented forward/inverse kinematics with resolved-rate control
 - Custom algorithm development for complex trajectory execution
-- Applied advanced control theory for precision path following
+- Applied control theory for precision path following
 
 **JHockey Robot - Autonomous Competition System** | *AI-Enhanced Robotics*
 - Embedded C++ control firmware with PyTorch-trained CNN integration
@@ -279,22 +279,24 @@ Distinguished robotics engineer with **Master's degree from Johns Hopkins Univer
 
 ## 🏆 **Awards & Recognition**
 
-### **Graduate Achievements**
-- **🥇 Robotics Distinguished Master Fellowship** - Johns Hopkins University (Full Scholarship)
+### **Johns Hopkins University**
+- **🥇 Robotics Distinguished Master Fellowship** - Full Scholarship Recognition
 - **🔬 Graduate Research Excellence** - Multiple published implementations
 - **👨‍🏫 Teaching Excellence Recognition** - Outstanding Graduate TA Performance
 
-### **Undergraduate Honors**
-- **🏅 Technical Excellence Award** - Innovative Senior Design Solution (UPEI)
-- **🎓 Engineers PEI Graduating Student Award** - Outstanding Graduate Recognition
-- **📚 Merit-Based Scholarship** - Coleman Fung Institute, UC Berkeley
-- **🌱 Engineering Sustainability Award** - Senior Design Innovation
-- **📊 Laurie A Coles Engineering Scholarship** - 3rd Highest Academic Standing
-- **🔬 NSERC-USRA Engineering Research Award** - Undergraduate Research Excellence
-- **🏆 Allan Curran Engineering Award** - Faculty Recognition
-- **📋 4x Dean's Honours List** - Sustained Academic Excellence
-- **⭐ 4x Academic Excellence Award** - Consistent High Performance
-- **🎯 Cambridge A-levels (A\*A\*A\*)** - International Academic Excellence
+### **University of Prince Edward Island**
+- **🏅 Technical Excellence Award** - Development of innovative design solution in Senior Design Clinic
+- **🎓 Engineers PEI Graduating Student Award** - Outstanding graduate recognition
+- **🌱 Senior Design (Year 3) Engineering Sustainability Award** - Sustainable engineering innovation
+- **📊 Laurie A Coles Engineering Scholarship** - 3rd Highest Standing in 2nd year
+- **🔬 UPEI NSERC-USRA EURA** - Engineering Undergraduate Research Award
+- **🏆 Allan Curran Engineering Award** - Faculty of Sustainable Design Engineering
+- **📋 4x Dean's Honours List** - Sustained academic excellence (FSDE)
+- **⭐ 4x Academic Excellence Award** - Consistent high performance
+
+### **External Recognition**
+- **📚 Merit-Based Scholarship** - Coleman Fung Institute for Engineering Leadership, UC Berkeley
+- **🎯 Cambridge A-levels (A\*A\*A\*)** - International academic excellence
 
 ---
 
@@ -342,7 +344,7 @@ Ready to drive innovation in robotics and autonomous systems. Whether you're loo
 
 **Preferred Industries:** Defense & Aerospace | Advanced Manufacturing | Medical Robotics | Autonomous Vehicles
 
-**Immigration Status:** Authorized to work in the United States
+**Immigration Status:** OPT Work Authorization
 
 </div>
 
