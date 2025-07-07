@@ -163,6 +163,75 @@ Distinguished robotics engineer with **Master's degree from Johns Hopkins Univer
 - Modular framework supporting rapid algorithm iteration and validation
 - Complete integration with MoveIt! motion planning framework
 
+**Repository:** [UR5 Path Planning Page](https://github.com/Seyi-roboticist/OluwaseyiR.github.io/tree/main/Projects/Path_Planning)
+
+![UR5 Path Planning](https://github.com/Seyi-roboticist/OluwaseyiR.github.io/assets/143431845/cdd1d19e-3765-42c3-9cce-d4a27d502e23)
+
+---
+
+### 🤖 **UR5 Robotic Arm Control**
+*Engineered algorithms for precise control over robotic arm movements*
+
+**Technical Achievement:**
+- Advanced kinematics implementation with real-time control
+- Forward and inverse kinematics with resolved-rate control
+- Sub-millisecond response times for precise path following
+- Complete integration with hardware control systems
+
+![UR5 Control Demo](https://github.com/Seyi-roboticist/OluwaseyiR.github.io/assets/143431845/c90ffc7d-1856-41c0-b7ab-4463ea19785c)
+
+---
+
+### 🔧 **Custom Robotic Arm Design**
+*Complete design, fabrication, and control of robotic manipulator*
+
+**Engineering Excellence:**
+- Full mechanical design with CAD modeling and analysis
+- Multi-actuator integration with precise positioning control
+- Advanced control techniques with feedback systems
+- Manufacturing and assembly using modern fabrication methods
+
+**Project Details:** [Project Page](https://github.com/Seyi-roboticist/OluwaseyiR.github.io/tree/main/Projects/Robot_Design)
+
+<img src="https://github.com/Seyi-roboticist/OluwaseyiR.github.io/assets/143431845/4a91cea4-ad13-4008-bac2-c505d4b2f155" width="350" alt="Custom Robotic Arm Design">
+
+---
+
+### 📱 **Autonomous Navigation Using IMU**
+*Advanced sensor-based navigation for mobile robotics*
+
+**Technical Innovation:**
+- IMU sensor data processing with advanced filtering algorithms
+- State estimation for robust localization in GPS-denied environments
+- Real-time navigation control with obstacle avoidance
+- Sensor fusion techniques for enhanced accuracy
+
+![Autonomous Navigation](https://github.com/Seyi-roboticist/OluwaseyiR.github.io/assets/143431845/e2be8889-235b-4072-83e4-30efd551662b)
+
+---
+
+### 🏠 **Arduino-Based Smart Window Blinds**
+*Intelligent home automation with environmental sensing*
+
+**System Features:**
+- Arduino-based control system with environmental feedback
+- Automated adjustment algorithms based on lighting conditions
+- User interface and manual override capabilities
+- Energy optimization through intelligent control
+
+**Technical Report:** [Final Project Report](https://drive.google.com/file/d/1o-G5HC1sr2drJMrGmJsTDCEat8fit3J1/view?usp=sharing)
+
+---
+
+### 🐭 **Micromouse Navigation Robot**
+*Autonomous maze-solving robot with advanced algorithms*
+
+**Technical Implementation:**
+- Obstacle detection with ultrasonic and infrared sensors
+- Line following and wall tracking with PID optimization
+- Real-time maze mapping and path optimization
+- Autonomous decision-making for efficient navigation
+
 ---
 
 ### 🤖 **Multi-Robot Simulation & Testing Pipeline**
@@ -273,7 +342,7 @@ Ready to drive innovation in robotics and autonomous systems. Whether you're loo
 
 **Preferred Industries:** Defense & Aerospace | Advanced Manufacturing | Medical Robotics | Autonomous Vehicles
 
-**Security Clearance:** Eligible for US Government Security Clearance
+**Immigration Status:** Authorized to work in the United States
 
 </div>
 
