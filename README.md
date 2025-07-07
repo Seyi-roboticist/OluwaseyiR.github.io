@@ -318,10 +318,10 @@ Distinguished robotics engineer with **Master's degree from Johns Hopkins Univer
 
 **Open to Opportunities In:**
 - Advanced manufacturing and automation companies
-- Defense contractors developing autonomous systems
-- Medical device companies focusing on robotic solutions
+- Commercial robotics companies developing next-gen solutions
+- Medical device companies focusing on robotic systems
 - Research institutions pushing robotics boundaries
-- Startups disrupting traditional robotics applications
+- Technology startups disrupting traditional robotics applications
 
 **Collaboration Interests:**
 - Joint research and development projects
