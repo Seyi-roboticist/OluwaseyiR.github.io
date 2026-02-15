@@ -1,6 +1,6 @@
 /*
-  Developer: Group 15 (Team of 2), Software and Electrical Lead -> Seyi R. Afolayan 
-  Project: Lab 3 - Autonomous Navigation
+  Developer: Seyi R. Afolayan 
+  Project: Autonomous Navigation
   Improvement: This sketch can be modularized! 
 */ 
 
