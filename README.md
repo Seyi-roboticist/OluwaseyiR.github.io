@@ -279,7 +279,6 @@ Distinguished robotics engineer with **Master's degree from Johns Hopkins Univer
 ### **Johns Hopkins University**
 - **🥇 Robotics Distinguished Master Fellowship** - Full Scholarship Recognition
 - **🔬 Graduate Research Excellence** - Multiple published implementations
-- **👨‍🏫 Teaching Excellence Recognition** - Outstanding Graduate TA Performance
 
 ### **University of Prince Edward Island**
 - **🏅 Technical Excellence Award** - Development of innovative design solution in Senior Design Clinic
